@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container-fluid {
+    padding: 10px 170px 150px;
+}
+
+.navbar .container-fluid {
+    padding: 0 170px;
+}
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 50px;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+.navbar-nav  li a:hover {
+    color: #1abc9c !important;
+}
+
+.navbar-header p {
+    text-align: center;
+    margin:10px auto;
+}
+
+/* .footer-padding {
+	padding-bottom: 60px;
+} */
+
+.footer {
+    /* position: fixed; */
+    margin-top: auto;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #1abc9c;
+}
+
+.footer p {
+	margin-top: 25px;
+	font-size: 12px;
+    /* padding-top: 20px; */
+    color: #fff;
+}
+
+/* Home Page */
+.main-title.title-journal{
+    margin-top: 20px;
+}
+
+.main-content {
+    margin: 20px 0 75px;
+}
