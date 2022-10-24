@@ -17,7 +17,6 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 mongoose.connect("mongodb://"+Config.mongoUsername+":"+Config.mongoPassword+"@ac-0rfmptd-shard-00-00.x1tr5i2.mongodb.net:27017,ac-0rfmptd-shard-00-01.x1tr5i2.mongodb.net:27017,ac-0rfmptd-shard-00-02.x1tr5i2.mongodb.net:27017/blogDB?replicaSet=atlas-6cglxv-shard-0&ssl=true&authSource=admin", {useNewUrlParser: true});
 
-
 const postSchema = new mongoose.Schema ({
   title: String,
   body: String
@@ -52,7 +51,7 @@ app.post("/delete", function(req, res) {
     if (err) {
       console.log(err);
     } else {
-      console.log("Sucessfully deleted an item document");
+      console.log("Successfully deleted an item document");
       res.redirect("/");
     }
   });
@@ -72,5 +71,5 @@ app.post("/compose", function(req, res) {
 
 
 app.listen(Config.port, function() {
-  console.log("Server has successfully started.");
+  console.log("Server has started successfully.");
 });
